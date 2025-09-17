@@ -19,7 +19,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Neon Text Effect for Heading */
+
 h1 {
   color: #fff;
   text-align: center;
@@ -67,7 +67,7 @@ h1 {
   margin-top: 30px;
 }
 
-/* (b) Descendant Selector for table caption */
+
 table caption {
   text-transform: uppercase;
   background-color: var(--table-color);
@@ -75,14 +75,16 @@ table caption {
   padding: 10px;
 }
 
-/* (c) partner will add pseudo-class for tr:nth-child(even) */
+tr:nth-child(even) {
+  background-color: var(--row-bg-color);
+}
 </style>
 </head>
 <body>
 
 <h1>Yesterday - Best-Selling Video Games</h1>
 
-<!-- Wrap table in .table-container for flexbox centering -->
+
 <div class="table-container">
   <table id="game-table">
     <caption>Best-Selling Video Games</caption>
@@ -115,8 +117,10 @@ table caption {
 </div>
 
 <p>
-  Source: <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games">
-  Wikipedia: List of best-selling video games</a>
+  Source:
+  <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games">
+    Wikipedia: List of best-selling video games
+  </a>
 </p>
 
 </body>
