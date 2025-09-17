@@ -19,7 +19,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-
+/* Neon Text Effect for Heading */
 h1 {
   color: #fff;
   text-align: center;
@@ -67,7 +67,7 @@ h1 {
   margin-top: 30px;
 }
 
-
+/* (b) Descendant Selector for table caption */
 table caption {
   text-transform: uppercase;
   background-color: var(--table-color);
@@ -75,8 +75,25 @@ table caption {
   padding: 10px;
 }
 
+/* (c) Pseudo-class Selector for tr:nth-child(even) */
 tr:nth-child(even) {
   background-color: var(--row-bg-color);
+}
+
+/* Center the source link */
+.source-link {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.source-link a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.source-link a:hover {
+  text-decoration: underline;
 }
 </style>
 </head>
@@ -84,6 +101,13 @@ tr:nth-child(even) {
 
 <h1>Yesterday - Best-Selling Video Games</h1>
 
+<!-- ✅ Moved the source link here, centered above the table -->
+<div class="source-link">
+  Source:
+  <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games">
+    Wikipedia: List of best-selling video games
+  </a>
+</div>
 
 <div class="table-container">
   <table id="game-table">
@@ -115,13 +139,6 @@ tr:nth-child(even) {
     </tr>
   </table>
 </div>
-
-<p>
-  Source:
-  <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games">
-    Wikipedia: List of best-selling video games
-  </a>
-</p>
 
 </body>
 </html>
